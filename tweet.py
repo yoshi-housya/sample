@@ -6,12 +6,12 @@ import os
 import random
 import datetime
 
-CK = "LoqNpuBFwxPMS9SLuhgrm1ino"
-CS = "ijYm0cE3e8oAcauQtFJ4ey1Ew7Tk4zzxnO9KBQodKiopKdKO1u"
-AT = "1022470594766360576-2ukqSvK3pePTSyeAAmNSdnt5swHUmC"
-AS = "qMlJmvWWZMKT5DiUkx5avNJplcn0Px8HMHJIXcOSMYWSs"
+CONSUMER_KEY = "LoqNpuBFwxPMS9SLuhgrm1ino"
+CONSUMER_SECRET = "ijYm0cE3e8oAcauQtFJ4ey1Ew7Tk4zzxnO9KBQodKiopKdKO1u"
+ACCESS_TOKEN_KEY = "1022470594766360576-2ukqSvK3pePTSyeAAmNSdnt5swHUmC"
+ACCESS_TOKEN_SECRET = "qMlJmvWWZMKT5DiUkx5avNJplcn0Px8HMHJIXcOSMYWSs"
 
-twitter = OAuth1Session(os.environ[CK],  os.environ[CS], os.environ["AT"], os.environ[AS])
+twitter = OAuth1Session(os.environ["CONSUMER_KEY"],  os.environ["CONSUMER_SECRET"], os.environ["ACCESS_TOKEN_KEY"], os.environ["ACCESS_TOKEN_SECRET"])
 
 tweets = ["hello,world!!","good night!","good morning"]
 
